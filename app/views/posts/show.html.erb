@@ -1,0 +1,30 @@
+
+<div class="container">
+<%= image_tag("zdravnik.jpg",size: "250x250", :alt => "slika") %>
+<h3>
+  <strong>Naziv, ime in priimek zdravnika  :</strong>
+  <%= @post.title %>
+</h3>
+
+<h3>
+
+  <strong>Opis:</strong>
+  <%= @post.body.html_safe %>
+</h3>
+
+
+<p>
+</p>
+<p>Čas zaposlitve: <%= time_ago_in_words(@post.created_at) %> ago</p>
+<br>
+<h4>Če imate, kakšno vprašanje, pohvalo, zapišite to v komentar.</h4>
+<h2>Število komentarjev: <%= @post.comments.count %> </h2>
+  <%= render @post.comments %>
+  <h3>Dodaj komentar: </h3>
+<%= render "comments/form" %>
+
+
+
+
+<%= link_to 'Back', posts_path %>
+</div>
