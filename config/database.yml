@@ -22,11 +22,11 @@ test:
 
 production:
   <<: *default
-  database: d3o5jrkl6t9n5r
-  username: dxvmbywmbmowgq
-  password: 87c61819cc002b2b6fd66f740a656335ae113d3af43771be1f5ce408d2e6ba1f
+  database: d76jtsilplpd7c
+  username: fhnzwscloqojsu
+  password: 5e96b2cf96b3ed09ffca453bb9cdef4e80e86cc724a2f00e5bc5eeb5d307d42b
   port: 5432
-  url: postgres://dxvmbywmbmowgq:87c61819cc002b2b6fd66f740a656335ae113d3af43771be1f5ce408d2e6ba1f@ec2-54-228-251-117.eu-west-1.compute.amazonaws.com:5432/d3o5jrkl6t9n5r
+  url: postgres://fhnzwscloqojsu:5e96b2cf96b3ed09ffca453bb9cdef4e80e86cc724a2f00e5bc5eeb5d307d42b@ec2-79-125-26-232.eu-west-1.compute.amazonaws.com:5432/d76jtsilplpd7c
 
   
   
